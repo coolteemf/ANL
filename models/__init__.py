@@ -1,6 +1,6 @@
 import torch
 from config import cfg
-from models.anl import AdvNoise
+from ANL.models.anl import AdvNoise
 
 
 def get_anl_creator(eps):
