@@ -72,6 +72,7 @@ class Trainer():
                 data = Variable(data, requires_grad=False)
                 label = Variable(label)
 
+                ### This triggers the set_clean function of the AdvNoise layer
                 pack.net.apply(lambda m: type(m) == AdvNoise and m.set_clean())
                 pack.optimizer.zero_grad()
                 est_out = pack.net(data)

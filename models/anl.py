@@ -35,7 +35,7 @@ class AdvNoise(nn.Module):
         if self.training and self.status == 'clean':
             n = grad.data.view(self.adv.shape[0], -1).max(dim=1)[0].view(*self.dim)
             r = self.cal_r(torch.zeros_like(n))
-            self.adv.data.set_(r * grad.data / (1e-6 + n))
+            self.adv = r * grad.data / (1e-6 + n)
 
     # pylint: disable=W0221,E1101
     def forward(self, x):
