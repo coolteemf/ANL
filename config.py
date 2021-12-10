@@ -31,11 +31,11 @@ def parse():
     return config
 
 cfg = None
-if cfg is None:
-    try:
-        cfg = parse()
-    except:
-        print('** Assert in demo mode. **')
+# if cfg is None:
+#     try:
+#         cfg = parse()
+#     except:
+#         print('** Assert in demo mode. **')
 
 def parse_from_dict(d):
     global cfg
