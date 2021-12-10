@@ -16,7 +16,6 @@ def make_as_dotdict(obj):
     return obj
 
 def parse():
-    print('Parsing config file...')
     parser = argparse.ArgumentParser(description="config")
     parser.add_argument(
         "--config",
