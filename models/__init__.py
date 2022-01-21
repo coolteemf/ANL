@@ -1,5 +1,5 @@
 import torch
-from config import cfg
+from ANL.config import cfg
 from ANL.models.anl import AdvNoise
 
 
