@@ -10,7 +10,7 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.8"
-torch = "^2.0.1"
+torch = ">1.0.0"
 
 
 [build-system]
